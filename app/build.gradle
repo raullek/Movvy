@@ -51,8 +51,10 @@ dependencies {
     implementation project(':module-injector')
     implementation project(':core-network')
     implementation project(':core-utill')
-    implementation project(':Features:MovieDetailFeatureApi')
-    implementation project(':Features:MovieDetailFeatureImpl')
+    implementation project(':Features:MovieDetail:MovieDetailFeatureApi')
+    implementation project(':Features:MovieDetail:MovieDetailFeatureImpl')
+    implementation project(':Features:Purchase:PurchaseLibApi')
+    implementation project(':Features:Purchase:PurchaseLibImpl')
 
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
 

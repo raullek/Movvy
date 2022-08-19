@@ -20,7 +20,10 @@ class AppModule {
     @Provides
     @Singleton
     fun dogsApiService(): MoviesApi {
-        return CoreNetworkComponent.get().networkWrapper().getRetrofit()
+        return CoreNetworkComponent
+            .get()
+            .getNetworkWrapper()
+            .getRetrofit()
             .create(MoviesApi::class.java)
     }
 }

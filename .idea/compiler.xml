@@ -5,8 +5,12 @@
       <module name="Movvy.app" target="11" />
       <module name="Movvy.core-network" target="11" />
       <module name="Movvy.core-utill" target="11" />
+      <module name="Movvy.Features.MovieDetail.MovieDetailFeatureApi" target="11" />
+      <module name="Movvy.Features.MovieDetail.MovieDetailFeatureImpl" target="11" />
       <module name="Movvy.Features.MovieDetailFeatureApi" target="11" />
       <module name="Movvy.Features.MovieDetailFeatureImpl" target="11" />
+      <module name="Movvy.Features.Purchase.PurchaseLibApi" target="11" />
+      <module name="Movvy.Features.Purchase.PurchaseLibImpl" target="11" />
       <module name="Movvy.MoviesDetailFeatureImpl" target="11" />
     </bytecodeTargetLevel>
   </component>

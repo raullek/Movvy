@@ -19,8 +19,7 @@ import com.example.movvy.presentation.ui.mainlist.MovieClickCallback
 class MoviePagerAdapter(
     val context: Context,
     private val movieClickCallback: MovieClickCallback
-) :
-    PagingDataAdapter<Movie, MoviePagerAdapter.MoviePagerViewHolder>(MOVIE_DIFF_UTIL) {
+) : PagingDataAdapter<Movie, MoviePagerAdapter.MoviePagerViewHolder>(MOVIE_DIFF_UTIL) {
 
     companion object {
         val MOVIE_DIFF_UTIL = object : DiffUtil.ItemCallback<Movie>() {

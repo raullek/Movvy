@@ -3,13 +3,18 @@ package com.example.core_network.core_network_impl.di
 import com.example.core_network.core_network_api.data.NetworkWrapper
 import dagger.Module
 import dagger.Provides
+import okhttp3.Dns
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import java.security.KeyStore
+import java.util.*
+import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+import javax.net.ssl.*
 
 @Module
 class NetworkModule {
@@ -64,9 +69,13 @@ class NetworkModule {
         okHttpLogger: HttpLoggingInterceptor,
         okHttpNetworkInterceptor: Interceptor
     ): OkHttpClient {
-        return OkHttpClient.Builder()
+        var httpClientBuilder = OkHttpClient.Builder()
+            .readTimeout(60, TimeUnit.SECONDS)
+            .connectTimeout(60, TimeUnit.SECONDS)
             .addInterceptor(okHttpLogger)
             .addInterceptor(okHttpNetworkInterceptor)
+
+        return httpClientBuilder
             .build()
     }
 

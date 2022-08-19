@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="Features/MovieDetail/MovieDetailFeatureImpl/src/main/res/layout/layout_detail.xml" value="0.16742654508611957" />
         <entry key="Features/MovieDetailFeatureImpl/src/main/res/layout/layout_detail.xml" value="0.29030797101449274" />
         <entry key="Features/MovieDetailFeatureImpl/src/main/res/xml/layout.xml" value="0.29030797101449274" />
+        <entry key="Features/Purchase/PurchaseLibImpl/src/main/res/layout/activity_purchase.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/layout_carousel.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/layout_corousel_with_title_item.xml" value="0.16742654508611957" />
         <entry key="app/src/main/res/layout/layout_main_activity.xml" value="0.19882246376811594" />
